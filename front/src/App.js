@@ -1,6 +1,13 @@
 import React from 'react';
 import logo from './logo.svg';
-import Main from './views/main';
+import './App.css';
+
+import {
+  BrowserRouter as Router,
+  Switch,
+  Route,
+  Link
+} from "react-router-dom";
 import Page1 from './views/page1';
 import Page2 from './views/page2';
 import Page3 from './views/page3';
@@ -8,55 +15,21 @@ import Page4 from './views/page4';
 import Page5 from './views/page5';
 import Page6 from './views/page6';
 
-import './App.css';
-import { BrowserRouter, Switch, Route, Redirect } from 'react-router-dom';
-
 function App() {
   return (
-    <BrowserRouter>
-    <Switch>
-      
-    <Route path="/main">
-      <Main>
-
-      </Main>
-    </Route> 
-
-    <Route path="/page1">
-      <Page1>
-
-      </Page1>
-    </Route>
-
-    <Route path="/page2">
-      <Page2>
-
-      </Page2>
-    </Route> 
-
-    <Route path="/page3">
-      <Page3>
-
-      </Page3>
-    </Route> 
-    <Route path="/page4">
-      <Page4>
-
-      </Page4>
-    </Route> 
-    <Route path="/page5">
-      <Page5>
-
-      </Page5>
-    </Route> 
-
-    <Route path="/page6">
-      <Page6>
-
-      </Page6>
-    </Route> 
-    </Switch>
-    </BrowserRouter>
+    <div>
+    <h1>Com Math</h1>
+    <div>
+        <ul>
+            <li><a href="/page1">บทที่ 1</a></li>
+            <li><a href="/page2">บทที่ 2</a></li>
+            <li><a href="/page3">บทที่ 3</a></li>
+            <li><a href="/page4">บทที่ 4</a></li>
+            <li><a href="/page5">บทที่ 5</a></li>
+            <li><a href="/page6">บทที่ 6</a></li>
+        </ul>
+    </div>
+</div>
   );
 }
 
