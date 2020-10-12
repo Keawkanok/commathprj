@@ -1,10 +1,10 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "17796382456b92afd938caa24ef30e76",
+    "revision": "d8ad969a3639bae954a3d6494e62505f",
     "url": "/commathprj/index.html"
   },
   {
-    "revision": "cd040b32f022d57ada72",
+    "revision": "18eaeae171d35c7be730",
     "url": "/commathprj/static/css/main.5f361e03.chunk.css"
   },
   {
@@ -16,8 +16,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/commathprj/static/js/2.ebbafd8b.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "cd040b32f022d57ada72",
-    "url": "/commathprj/static/js/main.ed6e4114.chunk.js"
+    "revision": "18eaeae171d35c7be730",
+    "url": "/commathprj/static/js/main.ece96683.chunk.js"
   },
   {
     "revision": "35dd3e25e0e60be3ec2b",
