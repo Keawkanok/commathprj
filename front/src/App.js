@@ -16,41 +16,41 @@ function App() {
     <BrowserRouter>
     <Switch>
       
-    <Route path="/main">
+    <Route path="/commathprj/main">
       <Main>
 
       </Main>
     </Route> 
 
-    <Route path="/page1">
+    <Route path="/commathprj/page1">
       <Page1>
 
       </Page1>
     </Route>
 
-    <Route path="/page2">
+    <Route path="/commathprj/page2">
       <Page2>
 
       </Page2>
     </Route> 
 
-    <Route path="/page3">
+    <Route path="/commathprj/page3">
       <Page3>
 
       </Page3>
     </Route> 
-    <Route path="/page4">
+    <Route path="/commathprj/page4">
       <Page4>
 
       </Page4>
     </Route> 
-    <Route path="/page5">
+    <Route path="/commathprj/page5">
       <Page5>
 
       </Page5>
     </Route> 
 
-    <Route path="/page6">
+    <Route path="/commathprj/page6">
       <Page6>
 
       </Page6>
