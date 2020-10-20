@@ -10,20 +10,17 @@ import Page6 from '../views/page6';
 
 const routes = [
 
-   {
-    path: '/',
-    children: [
+  
+      { path: '/', element: <Main/>},
       { path: 'commathprj', element: <Main/>},
-    ]
-  },
-    
-        { path: "Page1", element: <Page1 />, },
-        { path: "Page2", element: <Page2 />, },
-        { path: "Page3", element: <Page3 />, },
-        { path: "Page4", element: <Page4 />, },
-        { path: "Page5", element: <Page5 />, },
-        { path: "Page6", element: <Page6 />, },
-   
+      { path: "page1", element: <Page1 />, },
+      { path: "page2", element: <Page2 />, },
+      { path: "page3", element: <Page3 />, },
+      { path: "page4", element: <Page4 />, },
+      { path: "page5", element: <Page5 />, },
+      { path: "page6", element: <Page6 />, },
+      
+
 
   
   ];

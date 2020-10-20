@@ -23,7 +23,13 @@ const useStyles = makeStyles((theme) => ({
         fontWeight: "bold",
         
     },
-
+    colorButton2: {
+        backgroundColor: ' #f9c5d1 ',
+        backgroundImage:  'linear-gradient(315deg, #f9c5d1 0%, #9795ef 74%)',
+        fontSize: 20,
+        fontWeight: "bold",
+        marginTop: theme.spacing(5),
+      },
     state: {
         backgroundColor: ' #7f53ac ',
         backgroundImage:  'linear-gradient(315deg, #7f53ac 0%, #647dee 74%)',
@@ -74,10 +80,12 @@ export default function Page4() {
         setresult(res)
         });
     };
-
+    const back = () => {
+        navigate("/");
+      };
     return (
         <div>
-            <Navbar />
+            {/* <Navbar /> */}
             <Typography align="center">
                 <Card className={classes.card}>
                     <CardHeader
@@ -131,7 +139,16 @@ export default function Page4() {
                             คำนวน
                         </Button>
                         </Grid>
-                       
+                        <Grid  item xs={12}>
+                            <Button
+                            onClick={back}
+                            fullWidth
+                            variant="contained"
+                            className={classes.colorButton2}
+                            >
+                            กลับ
+                            </Button>
+                        </Grid>
                     </Grid>    
                     </CardActions>
                 </Card>

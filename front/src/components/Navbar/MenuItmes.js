@@ -1,4 +1,4 @@
-import React from 'react';
+// import React from 'react';
 // import Page1 from '../views/page1';
 
 export const MenuItems = [
@@ -38,10 +38,5 @@ export const MenuItems = [
         url: 'Page6',
         cName: 'nav-links'  
     },
-    // {
-    //     title: 'Root-finding',
-    //     url: '#',
-    //     cName: 'nav-links-mobile'  
-    // },
     
 ]
