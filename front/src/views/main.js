@@ -1,39 +1,54 @@
-import React from 'react'
+import React, { useState } from 'react';
 import "../App.css";
-import { CardTitle, CardText, Row, Col, Button, Card } from "reactstrap";
-import { useNavigate } from "react-router-dom";
+import Navbar from '../components/Navbar/Navbar';
+import Video from '../video/video.mp4';
+import { Pagemain, PageBg, VideoBg, TextContent ,TextH1 } from './style/pagemain';
+import Footer from '../components/Footer';
+import Icons from '../components/icons';
 
 function Main() {
-    const navigate = useNavigate();
-  
-    const nextPage = (page) => {
-      navigate("/" + page);
-    }  
+    const [state,setState] = useState(false);
+
+    let url="https://github.com/Keawkanok/commathprj";
+    
     return (
         <div>
-            <Button onClick={()=>{nextPage("page1")}} color="btn btn-dark">
-                <h5>1.Basic Computing</h5>
-            </Button><br/>
-            <Button onClick={()=>{nextPage("page2")}} color="btn btn-dark">
-                <h5>2.Linear Equations</h5>
-            </Button><br/>
-            <Button onClick={()=>{nextPage("page3")}} color="btn btn-dark">
-                <h5>3.Interpolation	</h5>
-            </Button><br/>
-            <Button onClick={()=>{nextPage("page4")}} color="btn btn-dark">
-                <h5>4.Differentiation</h5>
-            </Button><br/>
-            <Button onClick={()=>{nextPage("page5")}} color="btn btn-dark">
-                <h5>5.Integration	</h5>
-            </Button><br/>
-            <Button onClick={()=>{nextPage("page6")}} color="btn btn-dark">
-                <h5>6.Root-finding</h5>
-            </Button><br/>
+            <Navbar />
+                <Pagemain>
+                        <VideoBg autoPlay loop muted src={Video} type='video/mp4' />
+                    <TextContent>
+                        <TextH1>Computational Mathematics</TextH1>
+                    </TextContent>
+                </Pagemain>
+                <Footer>
+            <Footer.Wrapper>
+                <Footer.Row>
+                    <Footer.Column>
+                        {/* <Footer.Title>Github</Footer.Title> */}
+                       <a  href={url} ><Footer.Link><Icons className="fab fa-github" />Gighub</Footer.Link></a>
+                       
+                    </Footer.Column>
+                    <Footer.Column>
+                        {/* <Footer.Title>About Us</Footer.Title> */}
+                        <Footer.Link><Icons className="fab fa-grav" />Name</Footer.Link>
+                       
+                    </Footer.Column>
+                    <Footer.Column>
+                        {/* <Footer.Title>About Us</Footer.Title> */}
+                        <Footer.Link><Icons className="" />Thanyakon</Footer.Link>
+                       
+                    </Footer.Column>
+                    <Footer.Column>
+                        {/* <Footer.Title>About Us</Footer.Title> */}
+                        <Footer.Link><Icons className="" />Keawkanok</Footer.Link>
+                    </Footer.Column>
+                </Footer.Row>
+            </Footer.Wrapper>
+        </Footer>
         </div>
     );
 }
 
 export default Main;
-
 
 
